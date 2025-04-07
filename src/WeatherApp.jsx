@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./WeatherApp.css";
 
 import SearchBox from "./SearchBox";
 import InfoBox from "./infoBox";
@@ -21,8 +21,8 @@ export default function WeatherApp(){
     }
 
     return (
-        <div style ={ {textAlign: "center"}}>
-            <h2>Weather App by Aman</h2>
+        <div  className="weatherAppWrapper"style ={ {textAlign: "center"}}>
+            {/* <h2>Weather App by Aman</h2> */}
             <SearchBox updateInfo={updateInfo}/>
             <InfoBox info = {weatherInfo}/>
         </div>

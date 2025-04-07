@@ -1,8 +1,35 @@
-.InfoBox {
+/* .InfoBox {
     text-align: center;
 }
 
 .cardContainer{
     display: flex;
     justify-content: center;
+} */
+
+.InfoBox {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.MuiCard-root {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.MuiCard-root:hover {
+    transform: scale(1.02);
+}
+
+.MuiCardContent-root p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #333;
 }
